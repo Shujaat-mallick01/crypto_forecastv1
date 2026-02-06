@@ -1,0 +1,463 @@
+2026-02-07 02:23:31,490 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:23:31,510 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:23:31,511 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:23:31,513 | INFO     | src.config | All directories created
+2026-02-07 02:24:09,951 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:24:09,967 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:24:09,968 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:24:09,969 | INFO     | src.config | All directories created
+2026-02-07 02:24:10,048 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 02:24:15,689 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:24:15,706 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:24:15,707 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:24:15,709 | INFO     | src.config | All directories created
+2026-02-07 02:24:15,736 | WARNING  | werkzeug |  * Debugger is active!
+2026-02-07 02:24:15,739 | INFO     | werkzeug |  * Debugger PIN: 880-372-310
+2026-02-07 02:26:37,771 | INFO     | werkzeug |  * Detected change in 'C:\\Users\\TK\\OneDrive\\Desktop\\MLProjects\\crypto_forecast_refactored\\crypto_forecastv1\\dashboard\\app\\__init__.py', reloading
+2026-02-07 02:26:38,461 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 02:26:55,079 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:26:55,096 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:26:55,096 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:26:55,098 | INFO     | src.config | All directories created
+2026-02-07 02:26:55,124 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 02:27:01,457 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:27:01,472 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:27:01,473 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:27:01,474 | INFO     | src.config | All directories created
+2026-02-07 02:27:01,503 | WARNING  | werkzeug |  * Debugger is active!
+2026-02-07 02:27:01,508 | INFO     | werkzeug |  * Debugger PIN: 880-372-310
+2026-02-07 02:47:17,133 | INFO     | werkzeug |  * Detected change in 'C:\\Users\\TK\\OneDrive\\Desktop\\MLProjects\\crypto_forecast_refactored\\crypto_forecastv1\\dashboard\\app\\__init__.py', reloading
+2026-02-07 02:57:50,713 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:57:50,735 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:57:50,736 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:57:50,757 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 02:57:50,757 | INFO     | src.config | Configuration validation passed
+2026-02-07 02:57:50,779 | WARNING  | werkzeug | Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-02-07 02:57:50,839 | INFO     | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-07 02:57:50,839 | INFO     | werkzeug | [33mPress CTRL+C to quit[0m
+2026-02-07 02:57:50,840 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 03:01:16,121 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:16,133 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:01:16,134 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:16,147 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:01:16,148 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:16,200 | INFO     | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-07 03:01:16,200 | INFO     | werkzeug | [33mPress CTRL+C to quit[0m
+2026-02-07 03:01:16,201 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 03:01:21,003 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:21,015 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:01:21,016 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:21,031 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:01:21,032 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:01:21,066 | WARNING  | werkzeug |  * Debugger is active!
+2026-02-07 03:01:21,070 | INFO     | werkzeug |  * Debugger PIN: 550-480-733
+2026-02-07 03:01:25,694 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-07 03:01:25,740 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:25] "GET /auth/login HTTP/1.1" 200 -
+2026-02-07 03:01:25,915 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-07 03:01:25,981 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:25] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-02-07 03:01:27,247 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:27] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:01:27,257 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-02-07 03:01:27,895 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-07 03:01:38,578 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-02-07 03:01:38,674 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "GET /dashboard/ HTTP/1.1" 200 -
+2026-02-07 03:01:38,744 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 03:01:38,748 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+2026-02-07 03:01:38,752 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-02-07 03:01:38,775 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "[33mGET /api/dashboard/stats HTTP/1.1[0m" 404 -
+2026-02-07 03:01:38,781 | WARNING  | src.data.loader | Processed data not found for BTC
+2026-02-07 03:01:38,783 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:01:38,787 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:01:38,790 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:01:38,793 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:01:38,798 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:01:38,800 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "GET /api/predictions/latest?limit=10 HTTP/1.1" 200 -
+2026-02-07 03:01:38,801 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:01:38,802 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:01:38,804 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:01:38,806 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:01:38,808 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:01:38,855 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:38] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:01:38,858 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-02-07 03:01:51,300 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:51] "POST /training/start HTTP/1.1" 200 -
+2026-02-07 03:01:51,310 | INFO     | app.services.training_service | Starting training for ['BTC'] with ensemble
+2026-02-07 03:01:51,314 | INFO     | src.config | All directories created
+2026-02-07 03:01:51,315 | INFO     | src.pipeline.orchestrator | ================================================================================
+2026-02-07 03:01:51,316 | INFO     | src.pipeline.orchestrator | CRYPTO FORECAST PIPELINE
+2026-02-07 03:01:51,316 | INFO     | src.pipeline.orchestrator | Start time: 2026-02-07 03:01:51.315752
+2026-02-07 03:01:51,316 | INFO     | src.pipeline.orchestrator | Coins: ['BTC']
+2026-02-07 03:01:51,317 | INFO     | src.pipeline.orchestrator | ================================================================================
+2026-02-07 03:01:51,317 | INFO     | src.pipeline.orchestrator | 
+============================================================
+2026-02-07 03:01:51,317 | INFO     | src.pipeline.orchestrator | STEP 1: DATA INGESTION
+2026-02-07 03:01:51,318 | INFO     | src.pipeline.orchestrator | ============================================================
+2026-02-07 03:01:51,318 | INFO     | src.data.ingestion | Fetching data for 1 cryptocurrencies...
+2026-02-07 03:01:51,318 | INFO     | src.data.ingestion | [1/1] Processing BTC...
+2026-02-07 03:01:51,319 | INFO     | src.data.ingestion | Fetching 365 days of data for BTC (bitcoin)...
+2026-02-07 03:01:53,780 | INFO     | src.data.ingestion | Successfully fetched data for 1/1 coins
+2026-02-07 03:01:53,790 | INFO     | src.pipeline.orchestrator | 
+============================================================
+2026-02-07 03:01:53,791 | INFO     | src.pipeline.orchestrator | STEP 2: DATA VALIDATION
+2026-02-07 03:01:53,792 | INFO     | src.pipeline.orchestrator | ============================================================
+2026-02-07 03:01:53,839 | INFO     | src.data.validator | Running validation for raw data...
+2026-02-07 03:01:53,840 | INFO     | src.data.validator |   schema: All required columns present
+2026-02-07 03:01:53,841 | INFO     | src.data.validator |   data_types: All data types valid
+2026-02-07 03:01:53,848 | INFO     | src.data.validator |   missing_values: Total missing values: 0
+2026-02-07 03:01:53,852 | INFO     | src.data.validator |   value_ranges: All values within expected ranges
+2026-02-07 03:01:53,855 | INFO     | src.data.validator |   temporal_consistency: Data temporally consistent
+2026-02-07 03:01:53,875 | INFO     | src.data.validator |   outliers: No significant outliers detected
+2026-02-07 03:01:53,876 | INFO     | src.data.validator |   data_freshness: Data age: 0.0 hours
+2026-02-07 03:01:53,876 | INFO     | src.data.validator | Validation PASSED (7/7 checks)
+2026-02-07 03:01:53,884 | INFO     | src.pipeline.orchestrator | 
+============================================================
+2026-02-07 03:01:53,884 | INFO     | src.pipeline.orchestrator | STEP 3: FEATURE ENGINEERING
+2026-02-07 03:01:53,885 | INFO     | src.pipeline.orchestrator | ============================================================
+2026-02-07 03:01:53,887 | INFO     | src.features.pipeline | Creating features for 366 rows...
+2026-02-07 03:01:53,890 | INFO     | src.features.technical | Adding technical indicators...
+2026-02-07 03:01:54,030 | INFO     | src.features.technical | Added 32 indicator columns
+2026-02-07 03:01:54,030 | INFO     | src.features.lag_features | Creating lag and rolling features...
+2026-02-07 03:01:54,208 | INFO     | src.features.lag_features | Total columns after feature engineering: 159
+2026-02-07 03:01:54,686 | INFO     | src.features.pipeline | Removed 90 rows with NaN values (24.6%)
+2026-02-07 03:01:54,686 | INFO     | src.features.pipeline | Feature engineering complete: 276 rows, 165 columns
+2026-02-07 03:01:54,884 | INFO     | src.data.loader | Saved processed data to data\processed\BTC_features.csv
+2026-02-07 03:01:54,890 | INFO     | src.pipeline.orchestrator | 
+============================================================
+2026-02-07 03:01:54,890 | INFO     | src.pipeline.orchestrator | STEP 4: MODEL TRAINING
+2026-02-07 03:01:54,891 | INFO     | src.pipeline.orchestrator | ============================================================
+2026-02-07 03:01:54,970 | INFO     | src.models.trainer | Training price@1d for BTC...
+2026-02-07 03:01:54,984 | INFO     | src.features.pipeline | Prepared data for price @ 1d: 276 samples, 148 features
+2026-02-07 03:01:54,985 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:01:54,986 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:01:54,987 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:01:54,987 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:01:56,335 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:56] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:01:59,823 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-07 03:01:59,960 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:01:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 03:02:01,420 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:01] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:03,554 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:03,555 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:03,555 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:04,208 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 440
+2026-02-07 03:02:04,208 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:04,224 | INFO     | src.models.trainer | Validation metrics: {'mae': 4387.30672446258, 'rmse': np.float64(5097.048014504484), 'mape': np.float64(4.932906328203885), 'r2': -2.892600212636276}
+2026-02-07 03:02:04,327 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_price_1d_20260207_030204.joblib
+2026-02-07 03:02:04,336 | INFO     | src.models.trainer | Training price@7d for BTC...
+2026-02-07 03:02:04,350 | INFO     | src.features.pipeline | Prepared data for price @ 7d: 276 samples, 148 features
+2026-02-07 03:02:04,351 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:02:04,352 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:02:04,353 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:02:04,353 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:02:06,508 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:06] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:10,685 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:10,686 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:10,686 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:10,955 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 167
+2026-02-07 03:02:10,956 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:10,978 | INFO     | src.models.trainer | Validation metrics: {'mae': 2451.0740716844616, 'rmse': np.float64(2950.0335686000194), 'mape': np.float64(2.760954196911118), 'r2': -0.33546655295467187}
+2026-02-07 03:02:11,031 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_price_7d_20260207_030210.joblib
+2026-02-07 03:02:11,038 | INFO     | src.models.trainer | Training price@30d for BTC...
+2026-02-07 03:02:11,053 | INFO     | src.features.pipeline | Prepared data for price @ 30d: 276 samples, 148 features
+2026-02-07 03:02:11,054 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:02:11,055 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:02:11,056 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:02:11,056 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:02:11,540 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:11] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:13,652 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:13] "GET /dashboard/training HTTP/1.1" 200 -
+2026-02-07 03:02:13,708 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 03:02:13,740 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:13] "GET /static/js/training.js HTTP/1.1" 200 -
+2026-02-07 03:02:13,746 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-02-07 03:02:13,855 | WARNING  | src.data.loader | No raw data found for ETH
+2026-02-07 03:02:13,858 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:02:13,872 | WARNING  | src.data.loader | No raw data found for BNB
+2026-02-07 03:02:13,873 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:02:13,883 | WARNING  | src.data.loader | No raw data found for XRP
+2026-02-07 03:02:13,885 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:02:13,889 | WARNING  | src.data.loader | No raw data found for ADA
+2026-02-07 03:02:13,894 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:02:13,906 | WARNING  | src.data.loader | No raw data found for SOL
+2026-02-07 03:02:13,907 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:02:13,919 | WARNING  | src.data.loader | No raw data found for DOT
+2026-02-07 03:02:13,922 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:02:13,924 | WARNING  | src.data.loader | No raw data found for DOGE
+2026-02-07 03:02:13,924 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:02:13,929 | WARNING  | src.data.loader | No raw data found for AVAX
+2026-02-07 03:02:13,931 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:02:13,937 | WARNING  | src.data.loader | No raw data found for MATIC
+2026-02-07 03:02:13,937 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:02:13,942 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:13] "GET /training/summary HTTP/1.1" 200 -
+2026-02-07 03:02:14,028 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:14] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:02:14,033 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-02-07 03:02:16,564 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:16] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:17,949 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:17,954 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:17,954 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:18,144 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 92
+2026-02-07 03:02:18,145 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:18,156 | INFO     | src.models.trainer | Validation metrics: {'mae': 7831.688525166117, 'rmse': np.float64(12499.347200228303), 'mape': np.float64(9.7786680350964), 'r2': -3.0561673422641684}
+2026-02-07 03:02:18,209 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_price_30d_20260207_030218.joblib
+2026-02-07 03:02:18,213 | INFO     | src.models.trainer | Training market_cap@1d for BTC...
+2026-02-07 03:02:18,224 | INFO     | src.features.pipeline | Prepared data for market_cap @ 1d: 276 samples, 148 features
+2026-02-07 03:02:18,225 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:02:18,226 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:02:18,226 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:02:18,227 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:02:21,609 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:21] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:24,357 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:24,358 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:24,358 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:24,981 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 383
+2026-02-07 03:02:24,982 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:25,005 | INFO     | src.models.trainer | Validation metrics: {'mae': 84462159613.58386, 'rmse': np.float64(99060150168.20361), 'mape': np.float64(4.75731619046003), 'r2': -2.6693511733445257}
+2026-02-07 03:02:25,121 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_market_cap_1d_20260207_030225.joblib
+2026-02-07 03:02:25,217 | INFO     | src.models.trainer | Training market_cap@7d for BTC...
+2026-02-07 03:02:25,238 | INFO     | src.features.pipeline | Prepared data for market_cap @ 7d: 276 samples, 148 features
+2026-02-07 03:02:25,243 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:02:25,247 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:02:25,256 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:02:25,259 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:02:26,641 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:26] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:31,683 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:31] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:32,420 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:32,427 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:32,428 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:32,771 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 157
+2026-02-07 03:02:32,772 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:32,796 | INFO     | src.models.trainer | Validation metrics: {'mae': 48134475409.46181, 'rmse': np.float64(58201995811.1733), 'mape': np.float64(2.713523451411893), 'r2': -0.2889367850627582}
+2026-02-07 03:02:32,863 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_market_cap_7d_20260207_030232.joblib
+2026-02-07 03:02:32,883 | INFO     | src.models.trainer | Training market_cap@30d for BTC...
+2026-02-07 03:02:32,901 | INFO     | src.features.pipeline | Prepared data for market_cap @ 30d: 276 samples, 148 features
+2026-02-07 03:02:32,903 | INFO     | src.models.trainer | Temporal split: 220 train, 56 test
+2026-02-07 03:02:32,903 | INFO     | src.models.ensemble | Training ensemble model (weighted_average)...
+2026-02-07 03:02:32,904 | INFO     | src.models.ensemble | Training xgboost...
+2026-02-07 03:02:32,904 | INFO     | src.models.xgboost_model | Training XGBoost model on 220 samples...
+2026-02-07 03:02:36,719 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:36] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:38,876 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:02:38,877 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:02:38,879 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:02:38,879 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:02:38,880 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:02:38,881 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:02:38,881 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:02:38,882 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:02:38,883 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:02:38,886 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:38] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:02:40,801 | INFO     | src.models.xgboost_model | XGBoost training complete. Used 500 estimators (no early stopping)
+2026-02-07 03:02:40,802 | INFO     | src.models.ensemble | Training lightgbm...
+2026-02-07 03:02:40,802 | INFO     | src.models.lightgbm_model | Training LightGBM model on 220 samples...
+2026-02-07 03:02:41,053 | INFO     | src.models.lightgbm_model | LightGBM training complete. Best iteration: 60
+2026-02-07 03:02:41,054 | INFO     | src.models.ensemble | Ensemble training complete
+2026-02-07 03:02:41,075 | INFO     | src.models.trainer | Validation metrics: {'mae': 156545063933.94833, 'rmse': np.float64(243546466067.6745), 'mape': np.float64(9.754692677064138), 'r2': -2.9018781998294023}
+2026-02-07 03:02:41,122 | INFO     | src.models.ensemble | Model saved to models\crypto_forecast_BTC_market_cap_30d_20260207_030241.joblib
+2026-02-07 03:02:41,185 | INFO     | src.pipeline.orchestrator | 
+============================================================
+2026-02-07 03:02:41,186 | INFO     | src.pipeline.orchestrator | STEP 5: PREDICTIONS
+2026-02-07 03:02:41,186 | INFO     | src.pipeline.orchestrator | ============================================================
+2026-02-07 03:02:41,187 | INFO     | src.pipeline.predictor | Generating predictions for BTC...
+2026-02-07 03:02:41,371 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_1d_20260207_030204.joblib
+2026-02-07 03:02:41,505 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_7d_20260207_030210.joblib
+2026-02-07 03:02:41,618 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_30d_20260207_030218.joblib
+2026-02-07 03:02:41,790 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:41] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:41,790 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_market_cap_1d_20260207_030225.joblib
+2026-02-07 03:02:41,946 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_market_cap_7d_20260207_030232.joblib
+2026-02-07 03:02:42,072 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_market_cap_30d_20260207_030241.joblib
+2026-02-07 03:02:42,099 | INFO     | src.pipeline.orchestrator |   BTC price@1d: $95,054.09 (+4.16%)
+2026-02-07 03:02:42,100 | INFO     | src.pipeline.orchestrator |   BTC price@7d: $94,197.98 (+3.22%)
+2026-02-07 03:02:42,100 | INFO     | src.pipeline.orchestrator |   BTC price@30d: $102,504.39 (+12.32%)
+2026-02-07 03:02:42,100 | INFO     | src.pipeline.orchestrator |   BTC market_cap@1d: $1,899,314,557,088.16 (+4.23%)
+2026-02-07 03:02:42,101 | INFO     | src.pipeline.orchestrator |   BTC market_cap@7d: $1,879,996,587,567.66 (+3.17%)
+2026-02-07 03:02:42,101 | INFO     | src.pipeline.orchestrator |   BTC market_cap@30d: $2,031,592,717,613.21 (+11.49%)
+2026-02-07 03:02:42,102 | INFO     | src.pipeline.orchestrator | 
+================================================================================
+2026-02-07 03:02:42,103 | INFO     | src.pipeline.orchestrator | PIPELINE SUMMARY
+2026-02-07 03:02:42,103 | INFO     | src.pipeline.orchestrator | ================================================================================
+2026-02-07 03:02:42,104 | INFO     | src.pipeline.orchestrator | Duration: 50.8 seconds
+2026-02-07 03:02:42,104 | INFO     | src.pipeline.orchestrator | Status: SUCCESS
+2026-02-07 03:02:42,130 | INFO     | src.pipeline.orchestrator | ================================================================================
+2026-02-07 03:02:46,831 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:46] "GET /training/status/1 HTTP/1.1" 200 -
+2026-02-07 03:02:46,869 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:46] "[33mGET /api/dashboard/stats HTTP/1.1[0m" 404 -
+2026-02-07 03:02:46,892 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:02:46,895 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:02:46,898 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:02:46,900 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:02:46,901 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:02:46,902 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:02:46,903 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:02:46,904 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:02:46,907 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:02:46,910 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:02:46] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:03:09,752 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:09] "GET /dashboard/training HTTP/1.1" 200 -
+2026-02-07 03:03:09,815 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 03:03:09,825 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-02-07 03:03:09,833 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:09] "[36mGET /static/js/training.js HTTP/1.1[0m" 304 -
+2026-02-07 03:03:09,845 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:09] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-07 03:03:10,034 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:10] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:03:10,041 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-02-07 03:03:10,064 | WARNING  | src.data.loader | No raw data found for ETH
+2026-02-07 03:03:10,064 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:03:10,066 | WARNING  | src.data.loader | No raw data found for BNB
+2026-02-07 03:03:10,067 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:03:10,072 | WARNING  | src.data.loader | No raw data found for XRP
+2026-02-07 03:03:10,074 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:03:10,076 | WARNING  | src.data.loader | No raw data found for ADA
+2026-02-07 03:03:10,076 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:03:10,078 | WARNING  | src.data.loader | No raw data found for SOL
+2026-02-07 03:03:10,078 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:03:10,080 | WARNING  | src.data.loader | No raw data found for DOT
+2026-02-07 03:03:10,082 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:03:10,084 | WARNING  | src.data.loader | No raw data found for DOGE
+2026-02-07 03:03:10,084 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:03:10,090 | WARNING  | src.data.loader | No raw data found for AVAX
+2026-02-07 03:03:10,091 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:03:10,095 | WARNING  | src.data.loader | No raw data found for MATIC
+2026-02-07 03:03:10,096 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:03:10,100 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:10] "GET /training/summary HTTP/1.1" 200 -
+2026-02-07 03:03:43,271 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "GET /dashboard/ HTTP/1.1" 200 -
+2026-02-07 03:03:43,337 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-07 03:03:43,356 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-02-07 03:03:43,363 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-02-07 03:03:43,370 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-07 03:03:43,643 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[33mGET /api/dashboard/stats HTTP/1.1[0m" 404 -
+2026-02-07 03:03:43,661 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:03:43,664 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "GET /api/predictions/latest?limit=10 HTTP/1.1" 200 -
+2026-02-07 03:03:43,664 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:03:43,671 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:03:43,672 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:03:43,675 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:03:43,676 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:03:43,677 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:03:43,677 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:03:43,687 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-02-07 03:03:43,688 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:03:43,692 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:03:43,695 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:43] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:03:53,018 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_1d_20260207_030204.joblib
+2026-02-07 03:03:53,148 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_7d_20260207_030210.joblib
+2026-02-07 03:03:53,260 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_30d_20260207_030218.joblib
+2026-02-07 03:03:53,318 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:53] "POST /api/predict/BTC HTTP/1.1" 200 -
+2026-02-07 03:03:53,331 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:53] "[33mGET /api/dashboard/stats HTTP/1.1[0m" 404 -
+2026-02-07 03:03:53,336 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:53] "GET /api/predictions/latest?limit=10 HTTP/1.1" 200 -
+2026-02-07 03:03:59,522 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_1d_20260207_030204.joblib
+2026-02-07 03:03:59,654 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_7d_20260207_030210.joblib
+2026-02-07 03:03:59,792 | INFO     | src.models.ensemble | Model loaded from models\crypto_forecast_BTC_price_30d_20260207_030218.joblib
+2026-02-07 03:03:59,858 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:59] "POST /api/predict/BTC HTTP/1.1" 200 -
+2026-02-07 03:03:59,880 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:59] "[33mGET /api/dashboard/stats HTTP/1.1[0m" 404 -
+2026-02-07 03:03:59,883 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:03:59] "GET /api/predictions/latest?limit=10 HTTP/1.1" 200 -
+2026-02-07 03:04:43,951 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:04:43,953 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:04:43,954 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:04:43,956 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:04:43,958 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:04:43,960 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:04:43,961 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:04:43,963 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:04:43,964 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:04:43,969 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:04:43] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:05:43,946 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:05:43,947 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:05:43,948 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:05:43,949 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:05:43,950 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:05:43,950 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:05:43,951 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:05:43,952 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:05:43,953 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:05:43,955 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:05:43] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:06:43,940 | WARNING  | src.data.loader | Processed data not found for ETH
+2026-02-07 03:06:43,940 | WARNING  | src.data.loader | Processed data not found for BNB
+2026-02-07 03:06:43,941 | WARNING  | src.data.loader | Processed data not found for XRP
+2026-02-07 03:06:43,941 | WARNING  | src.data.loader | Processed data not found for ADA
+2026-02-07 03:06:43,941 | WARNING  | src.data.loader | Processed data not found for SOL
+2026-02-07 03:06:43,942 | WARNING  | src.data.loader | Processed data not found for DOT
+2026-02-07 03:06:43,942 | WARNING  | src.data.loader | Processed data not found for DOGE
+2026-02-07 03:06:43,943 | WARNING  | src.data.loader | Processed data not found for AVAX
+2026-02-07 03:06:43,943 | WARNING  | src.data.loader | Processed data not found for MATIC
+2026-02-07 03:06:43,944 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:06:43] "GET /api/market/live HTTP/1.1" 200 -
+2026-02-07 03:18:29,596 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:29,608 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:18:29,609 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:29,622 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:18:29,623 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:29,668 | INFO     | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-07 03:18:29,668 | INFO     | werkzeug | [33mPress CTRL+C to quit[0m
+2026-02-07 03:18:29,668 | INFO     | werkzeug |  * Restarting with stat
+2026-02-07 03:18:36,983 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:37,025 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:18:37,030 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:37,071 | INFO     | src.config | Configuration loaded from C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\config\config.yaml
+2026-02-07 03:18:37,073 | INFO     | src.config | Configuration validation passed
+2026-02-07 03:18:37,156 | WARNING  | werkzeug |  * Debugger is active!
+2026-02-07 03:18:37,163 | INFO     | werkzeug |  * Debugger PIN: 550-480-733
+2026-02-07 03:18:37,373 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:18:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-02-07 03:18:37,423 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:18:37] "GET /auth/login HTTP/1.1" 200 -
+2026-02-07 03:18:37,624 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:18:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-07 03:18:37,653 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:18:37] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-02-07 03:18:38,189 | INFO     | werkzeug | 127.0.0.1 - - [07/Feb/2026 03:18:38] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-02-07 03:18:38,194 | ERROR    | werkzeug | Error on request:
+Traceback (most recent call last):
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "C:\Users\TK\OneDrive\Desktop\MLProjects\crypto_forecast_refactored\crypto_forecastv1\cryptovenv\Lib\site-packages\werkzeug\serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response

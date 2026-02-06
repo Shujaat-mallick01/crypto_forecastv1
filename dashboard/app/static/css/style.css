@@ -1,0 +1,251 @@
+/* Custom CSS for Crypto Forecast Dashboard */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--info-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 600;
+}
+
+/* Dashboard Stats */
+.card.text-white h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card.text-white h5 {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Tables */
+.table {
+    background-color: white;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--dark-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+    cursor: pointer;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+/* Forms */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Bars */
+.progress {
+    height: 25px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 25px;
+    background: linear-gradient(90deg, var(--primary-color), var(--info-color));
+}
+
+/* WebSocket Status */
+#websocket-status {
+    transition: all 0.3s;
+}
+
+#websocket-status.connected {
+    background-color: var(--success-color) !important;
+}
+
+#websocket-status.connecting {
+    background-color: var(--warning-color) !important;
+}
+
+#websocket-status.disconnected {
+    background-color: var(--danger-color) !important;
+}
+
+/* Charts */
+canvas {
+    max-height: 400px;
+}
+
+/* Loading Animation */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-color);
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Alert styles */
+.alert {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.alert-info {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: var(--info-color);
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning-color);
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+}

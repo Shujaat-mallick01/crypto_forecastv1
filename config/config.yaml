@@ -1,0 +1,185 @@
+# =============================================================================
+# Crypto Forecast Pipeline - Optimized Configuration
+# =============================================================================
+
+# API Configuration
+api:
+  coingecko:
+    base_url: "https://api.coingecko.com/api/v3"
+    timeout: 30
+    max_retries: 3
+    backoff_factor: 2
+    rate_limit_delay: 1.5  # seconds between requests (free tier)
+  
+  # CoinMarketCap (optional, requires API key)
+  coinmarketcap:
+    base_url: "https://pro-api.coinmarketcap.com"
+    timeout: 30
+    max_retries: 3
+    backoff_factor: 2
+
+# Data Configuration
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  predictions_path: "data/predictions"
+  reports_path: "data/reports"
+  visualizations_path: "data/visualizations"
+  
+  # Target cryptocurrencies
+  coins:
+    - symbol: "BTC"
+      coingecko_id: "bitcoin"
+    - symbol: "ETH"
+      coingecko_id: "ethereum"
+    - symbol: "BNB"
+      coingecko_id: "binancecoin"
+    - symbol: "XRP"
+      coingecko_id: "ripple"
+    - symbol: "ADA"
+      coingecko_id: "cardano"
+    - symbol: "SOL"
+      coingecko_id: "solana"
+    - symbol: "DOT"
+      coingecko_id: "polkadot"
+    - symbol: "DOGE"
+      coingecko_id: "dogecoin"
+    - symbol: "AVAX"
+      coingecko_id: "avalanche-2"
+    - symbol: "MATIC"
+      coingecko_id: "matic-network"
+  
+  historical_days: 365
+  min_data_points: 100  # Minimum required for training
+
+# Feature Engineering Configuration
+features:
+  # Lag features (previous values)
+  lag_periods: [1, 3, 7, 14, 30]
+  
+  # Rolling window statistics
+  rolling_windows: [7, 14, 30, 60]
+  
+  # Return calculation periods
+  return_periods: [1, 3, 7, 14, 30]
+  
+  # Technical indicators
+  technical:
+    rsi_period: 14
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    bollinger_period: 20
+    bollinger_std: 2
+  
+  # Feature scaling
+  scaling:
+    method: "robust"  # robust, standard, minmax
+    clip_outliers: true
+    outlier_threshold: 5.0  # z-score
+
+# Model Configuration
+model:
+  # Prediction targets
+  targets: ["price", "market_cap"]
+  
+  # Forecast horizons (days ahead)
+  horizons: [1, 7, 30]  # Optimized: removed 14 to reduce training time
+  
+  # Train/test split
+  test_size: 0.2
+  validation_splits: 5
+  random_state: 42
+  
+  # Default algorithm
+  default_algorithm: "lightgbm"  # lightgbm is faster than xgboost
+  
+  # XGBoost hyperparameters
+  xgboost:
+    learning_rate: 0.05
+    max_depth: 6
+    n_estimators: 500
+    early_stopping_rounds: 50
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.1
+    reg_lambda: 1.0
+    tree_method: "hist"  # Faster training
+    n_jobs: -1
+  
+  # LightGBM hyperparameters (faster alternative)
+  lightgbm:
+    learning_rate: 0.05
+    num_leaves: 31
+    max_depth: -1
+    n_estimators: 500
+    early_stopping_rounds: 50
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.1
+    reg_lambda: 1.0
+    n_jobs: -1
+    verbose: -1
+  
+  # Ensemble configuration
+  ensemble:
+    enabled: true
+    method: "weighted_average"  # weighted_average, stacking
+    weights:
+      xgboost: 0.5
+      lightgbm: 0.5
+
+# Hyperparameter Tuning (Optuna)
+hyperopt:
+  enabled: false  # Set to true to enable
+  n_trials: 50
+  timeout: 3600  # 1 hour max
+  sampler: "tpe"  # tpe, random, cmaes
+  pruner: "median"  # median, hyperband
+
+# Model Storage
+storage:
+  models_path: "models"
+  model_prefix: "crypto_forecast"
+  keep_last_n: 3
+  save_format: "joblib"  # joblib, pickle
+
+# Evaluation Metrics
+evaluation:
+  primary_metric: "rmse"
+  metrics: ["mae", "rmse", "mape", "r2", "directional_accuracy"]
+  
+  # Baseline methods for comparison
+  baselines:
+    - "naive"        # tomorrow = today
+    - "moving_avg"   # 7-day moving average
+    - "drift"        # linear trend
+
+# Monitoring & Alerts
+monitoring:
+  data_freshness_hours: 24
+  prediction_latency_seconds: 60
+  performance_threshold:
+    mape_warning: 10.0
+    mape_critical: 20.0
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+  file: "logs/pipeline.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# Parallel Processing
+parallel:
+  enabled: true
+  max_workers: -1  # -1 = all CPUs
+  batch_size: 5    # coins per batch
+
+# Visualization
+visualization:
+  style: "darkgrid"
+  figure_size: [12, 6]
+  dpi: 150
+  save_format: "png"
