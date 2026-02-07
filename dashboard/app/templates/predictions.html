@@ -1,153 +1,155 @@
 {% extends "base.html" %}
 
 {% block title %}Predictions - Crypto Forecast{% endblock %}
+{% block nav_predictions %}active{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <h1 class="mb-4">Predictions</h1>
+<div class="page-title">Predictions</div>
+<div class="page-subtitle">View, generate, and track all your cryptocurrency predictions.</div>
 
-    <!-- Quick Predict -->
-    <div class="card mb-4">
-        <div class="card-header">
-            <h5 class="mb-0"><i class="fas fa-chart-line"></i> Generate New Predictions</h5>
-        </div>
-        <div class="card-body">
-            <div class="row align-items-end">
-                <div class="col-md-3">
-                    <label for="pred-coin" class="form-label">Coin</label>
-                    <select class="form-select" id="pred-coin">
-                        <option value="">Choose...</option>
-                        {% for coin in coins %}
-                        <option value="{{ coin }}">{{ coin }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="pred-type" class="form-label">Type</label>
-                    <select class="form-select" id="pred-type">
-                        <option value="price">Price</option>
-                        <option value="market_cap">Market Cap</option>
-                        <option value="all">Both</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-primary" id="generate-pred-btn" onclick="generatePrediction()">
-                        <i class="fas fa-chart-line"></i> Generate
-                    </button>
-                </div>
-                <div class="col-md-3">
-                    <div id="pred-status"></div>
-                </div>
-            </div>
-            <div id="new-prediction-result" class="mt-3"></div>
-        </div>
+<!-- Quick Predict -->
+<div class="cf-card animate-in" style="margin-bottom:24px;">
+    <div class="cf-card-header">
+        <h3><i class="fas fa-chart-line" style="margin-right:8px; color:var(--accent);"></i> Generate New Prediction</h3>
     </div>
-
-    <!-- Filter Section -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-3">
-                    <select class="form-select" id="coin-filter">
-                        <option value="">All Coins</option>
-                        {% for coin in coins %}
-                        <option value="{{ coin }}">{{ coin }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <select class="form-select" id="type-filter">
-                        <option value="">All Types</option>
-                        <option value="price">Price</option>
-                        <option value="market_cap">Market Cap</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-primary" onclick="filterPredictions()">
-                        <i class="fas fa-filter"></i> Filter
-                    </button>
-                    <button class="btn btn-secondary" onclick="resetFilters()">
-                        <i class="fas fa-redo"></i> Reset
-                    </button>
-                </div>
+    <div class="cf-card-body">
+        <div class="row align-items-end g-3">
+            <div class="col-md-3">
+                <label class="cf-label">Coin</label>
+                <select class="cf-select" id="pred-coin">
+                    <option value="">Choose...</option>
+                    {% for coin in coins %}
+                    <option value="{{ coin }}">{{ coin }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="cf-label">Type</label>
+                <select class="cf-select" id="pred-type">
+                    <option value="price">Price</option>
+                    <option value="market_cap">Market Cap</option>
+                    <option value="all">Both</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="cf-btn primary" id="generate-pred-btn" onclick="generatePrediction()">
+                    <i class="fas fa-chart-line"></i> Generate
+                </button>
+            </div>
+            <div class="col-md-3">
+                <div id="pred-status"></div>
             </div>
         </div>
+        <div id="new-prediction-result" style="margin-top:16px;"></div>
     </div>
+</div>
 
-    <!-- Predictions Table -->
-    <div class="card">
-        <div class="card-header d-flex justify-content-between">
-            <h5 class="mb-0">Prediction History</h5>
-            <span class="badge bg-primary">{{ predictions|length }} predictions</span>
+<!-- Filters -->
+<div class="cf-card animate-in" style="margin-bottom:24px;">
+    <div class="cf-card-body" style="padding:14px 22px;">
+        <div class="row align-items-center g-3">
+            <div class="col-md-3">
+                <select class="cf-select" id="coin-filter">
+                    <option value="">All Coins</option>
+                    {% for coin in coins %}
+                    <option value="{{ coin }}">{{ coin }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="cf-select" id="type-filter">
+                    <option value="">All Types</option>
+                    <option value="price">Price</option>
+                    <option value="market_cap">Market Cap</option>
+                </select>
+            </div>
+            <div class="col-md-6 d-flex gap-2">
+                <button class="cf-btn primary sm" onclick="filterPredictions()">
+                    <i class="fas fa-filter"></i> Filter
+                </button>
+                <button class="cf-btn outline sm" onclick="resetFilters()">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
         </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-hover" id="predictions-table">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Coin</th>
-                            <th>Type</th>
-                            <th>Target Date</th>
-                            <th>Current Value</th>
-                            <th>Predicted Value</th>
-                            <th>Change</th>
-                            <th>Confidence</th>
-                            <th>Model</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for prediction in predictions %}
-                        <tr class="prediction-row"
-                            data-coin="{{ prediction.coin_symbol }}"
-                            data-type="{{ prediction.prediction_type }}">
-                            <td>{{ prediction.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
-                            <td>
-                                <span class="badge bg-primary">{{ prediction.coin_symbol }}</span>
-                            </td>
-                            <td>{{ prediction.prediction_type }}</td>
-                            <td>
-                                {% if prediction.prediction_date %}
-                                    {{ prediction.prediction_date.strftime('%Y-%m-%d') }}
-                                {% else %}
-                                    -
-                                {% endif %}
-                            </td>
-                            <td>{{ "${:,.2f}".format(prediction.current_value) }}</td>
-                            <td>{{ "${:,.2f}".format(prediction.predicted_value) }}</td>
-                            <td>
-                                {% set change = ((prediction.predicted_value - prediction.current_value) / prediction.current_value * 100) if prediction.current_value else 0 %}
-                                <span class="badge bg-{{ 'success' if change > 0 else 'danger' }}">
-                                    <i class="fas fa-arrow-{{ 'up' if change > 0 else 'down' }}"></i>
-                                    {{ "{:+.2f}%".format(change) }}
-                                </span>
-                            </td>
-                            <td>
-                                {% if prediction.confidence %}
-                                <div class="progress" style="height: 20px; min-width: 80px;">
-                                    <div class="progress-bar" role="progressbar"
-                                         style="width: {{ (prediction.confidence * 100)|int }}%">
-                                        {{ "{:.0f}%".format(prediction.confidence * 100) }}
-                                    </div>
+    </div>
+</div>
+
+<!-- Predictions Table -->
+<div class="cf-card animate-in">
+    <div class="cf-card-header">
+        <h3>Prediction History</h3>
+        <span class="cf-badge accent">{{ predictions|length }} predictions</span>
+    </div>
+    <div class="cf-card-body" style="padding:0;">
+        <div style="overflow-x:auto;">
+            <table class="cf-table" id="predictions-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Coin</th>
+                        <th>Type</th>
+                        <th>Target Date</th>
+                        <th>Current Value</th>
+                        <th>Predicted Value</th>
+                        <th>Change</th>
+                        <th>Confidence</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for prediction in predictions %}
+                    <tr class="prediction-row"
+                        data-coin="{{ prediction.coin_symbol }}"
+                        data-type="{{ prediction.prediction_type }}">
+                        <td>{{ prediction.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                        <td><span class="cf-badge accent">{{ prediction.coin_symbol }}</span></td>
+                        <td style="text-transform:capitalize;">{{ prediction.prediction_type }}</td>
+                        <td>
+                            {% if prediction.prediction_date %}
+                                {{ prediction.prediction_date.strftime('%Y-%m-%d') }}
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                        <td style="font-weight:600;">{{ "${:,.2f}".format(prediction.current_value) }}</td>
+                        <td style="font-weight:600;">{{ "${:,.2f}".format(prediction.predicted_value) }}</td>
+                        <td>
+                            {% set change = ((prediction.predicted_value - prediction.current_value) / prediction.current_value * 100) if prediction.current_value else 0 %}
+                            <span class="cf-badge {{ 'success' if change > 0 else 'danger' }}">
+                                <i class="fas fa-arrow-{{ 'up' if change > 0 else 'down' }}" style="font-size:10px;"></i>
+                                {{ "{:+.2f}%".format(change) }}
+                            </span>
+                        </td>
+                        <td>
+                            {% if prediction.confidence %}
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <div class="cf-progress" style="flex:1;min-width:60px;">
+                                    <div class="cf-progress-fill {% if prediction.confidence > 0.7 %}success{% elif prediction.confidence > 0.4 %}{% else %}danger{% endif %}"
+                                         style="width:{{ (prediction.confidence * 100)|int }}%;"></div>
                                 </div>
-                                {% else %}
-                                -
-                                {% endif %}
-                            </td>
-                            <td>
-                                <small class="text-muted">{{ prediction.model_version or '-' }}</small>
-                            </td>
-                        </tr>
-                        {% else %}
-                        <tr>
-                            <td colspan="9" class="text-center text-muted">
-                                No predictions yet. Go to the Dashboard to generate predictions.
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
+                                <span style="font-size:12px;font-weight:600;color:var(--text-secondary);">
+                                    {{ "{:.0f}%".format(prediction.confidence * 100) }}
+                                </span>
+                            </div>
+                            {% else %}
+                            —
+                            {% endif %}
+                        </td>
+                        <td><span style="font-size:12px;color:var(--text-muted);">{{ prediction.model_version or '—' }}</span></td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="9">
+                            <div class="empty-state">
+                                <i class="fas fa-chart-bar"></i>
+                                <p>No predictions yet. Go to the Dashboard to generate predictions.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

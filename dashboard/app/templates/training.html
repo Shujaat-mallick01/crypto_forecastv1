@@ -1,167 +1,189 @@
 {% extends "base.html" %}
 
 {% block title %}Training - Crypto Forecast{% endblock %}
+{% block nav_training %}active{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <h1 class="mb-4">Model Training Center</h1>
+<div class="page-title">Model Training Center</div>
+<div class="page-subtitle">Configure, train, and monitor your machine learning models.</div>
 
-    <!-- Training Control Panel -->
-    <div class="row mb-4">
-        <div class="col-md-5">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="mb-0"><i class="fas fa-cogs"></i> Training Configuration</h5>
-                </div>
-                <div class="card-body">
-                    <form id="training-config-form">
-                        <div class="mb-3">
-                            <label class="form-label">Select Coins</label>
-                            <select class="form-select" id="config-coins" multiple size="5">
-                                {% for coin in coins %}
-                                <option value="{{ coin }}">
-                                    {{ coin }} {% if coin in coins_with_models %}(Has Model){% endif %}
-                                </option>
-                                {% endfor %}
-                            </select>
-                            <small class="text-muted">Hold Ctrl/Cmd to select multiple</small>
-                        </div>
-                        <div class="mb-3">
-                            <label for="config-model" class="form-label">Model Type</label>
-                            <select class="form-select" id="config-model">
-                                <option value="ensemble" selected>Ensemble (XGBoost + LightGBM)</option>
-                                <option value="xgboost">XGBoost Only</option>
-                                <option value="lightgbm">LightGBM Only</option>
-                            </select>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="config-skip-ingestion">
-                            <label class="form-check-label" for="config-skip-ingestion">
-                                Skip data download (use existing data)
-                            </label>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-success" id="start-training-btn">
-                                <i class="fas fa-rocket"></i> Start Full Pipeline
-                            </button>
-                            <button type="button" class="btn btn-outline-primary" id="select-all-coins">
-                                Select All Coins
-                            </button>
-                        </div>
-                    </form>
-
-                    <hr>
-                    <h6>Pipeline Steps:</h6>
-                    <ol class="small text-muted">
-                        <li>Fetch data from CoinGecko API</li>
-                        <li>Validate data quality</li>
-                        <li>Generate features (100+ indicators)</li>
-                        <li>Train models (XGBoost/LightGBM/Ensemble)</li>
-                        <li>Generate predictions for all horizons</li>
-                    </ol>
-                </div>
+<div class="row g-4 mb-4">
+    <!-- Training Configuration -->
+    <div class="col-lg-5">
+        <div class="cf-card animate-in" style="height:100%;">
+            <div class="cf-card-header">
+                <h3><i class="fas fa-cogs" style="margin-right:8px; color:var(--accent);"></i> Training Configuration</h3>
             </div>
-        </div>
-
-        <!-- Live Training Monitor -->
-        <div class="col-md-7">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="mb-0"><i class="fas fa-chart-line"></i> Training Monitor</h5>
-                </div>
-                <div class="card-body">
-                    <div id="training-monitor">
-                        <div class="alert alert-info">
-                            <i class="fas fa-info-circle"></i> No active training session. Configure and start training from the left panel.
-                        </div>
+            <div class="cf-card-body">
+                <form id="training-config-form">
+                    <div style="margin-bottom:16px;">
+                        <label class="cf-label">Select Coins</label>
+                        <select class="cf-select" id="config-coins" multiple size="5">
+                            {% for coin in coins %}
+                            <option value="{{ coin }}">
+                                {{ coin }} {% if coin in coins_with_models %}✓ Has Model{% endif %}
+                            </option>
+                            {% endfor %}
+                        </select>
+                        <small style="color:var(--text-muted);font-size:12px;">Hold Ctrl/Cmd to select multiple</small>
                     </div>
-                </div>
-            </div>
+                    <div style="margin-bottom:16px;">
+                        <label class="cf-label">Model Type</label>
+                        <select class="cf-select" id="config-model">
+                            <option value="ensemble" selected>Ensemble (XGBoost + LightGBM)</option>
+                            <option value="xgboost">XGBoost Only</option>
+                            <option value="lightgbm">LightGBM Only</option>
+                        </select>
+                    </div>
+                    <label class="cf-checkbox" style="margin-bottom:20px;">
+                        <input type="checkbox" id="config-skip-ingestion">
+                        Skip data download (use existing data)
+                    </label>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <button type="submit" class="cf-btn success full" id="start-training-btn">
+                            <i class="fas fa-rocket"></i> Start Full Pipeline
+                        </button>
+                        <button type="button" class="cf-btn outline full" id="select-all-coins">
+                            Select All Coins
+                        </button>
+                    </div>
+                </form>
 
-            <!-- Model Status -->
-            <div class="card mt-3">
-                <div class="card-header">
-                    <h5 class="mb-0"><i class="fas fa-check-circle"></i> Model Status</h5>
-                </div>
-                <div class="card-body">
-                    <div id="model-status-content">
-                        <div class="text-center text-muted">Loading model status...</div>
+                <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--border-light);">
+                    <div class="cf-label" style="margin-bottom:12px;">Pipeline Steps</div>
+                    <div class="pipeline-steps">
+                        <div class="pipeline-step">
+                            <div class="step-num">1</div>
+                            <div class="step-text">Fetch data from CoinGecko API</div>
+                        </div>
+                        <div class="pipeline-step">
+                            <div class="step-num">2</div>
+                            <div class="step-text">Validate data quality</div>
+                        </div>
+                        <div class="pipeline-step">
+                            <div class="step-num">3</div>
+                            <div class="step-text">Generate features (100+ indicators)</div>
+                        </div>
+                        <div class="pipeline-step">
+                            <div class="step-num">4</div>
+                            <div class="step-text">Train models (XGBoost / LightGBM / Ensemble)</div>
+                        </div>
+                        <div class="pipeline-step">
+                            <div class="step-num">5</div>
+                            <div class="step-text">Generate predictions for all horizons</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Training History -->
-    <div class="card">
-        <div class="card-header">
-            <h5 class="mb-0"><i class="fas fa-history"></i> Training History</h5>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Start Time</th>
-                            <th>Coins</th>
-                            <th>Model</th>
-                            <th>Status</th>
-                            <th>Duration</th>
-                            <th>Metrics</th>
-                        </tr>
-                    </thead>
-                    <tbody id="training-history">
-                        {% for session in sessions %}
-                        <tr>
-                            <td>{{ session.start_time.strftime('%Y-%m-%d %H:%M') }}</td>
-                            <td>
-                                <span class="badge bg-primary">{{ session.coin_symbol }}</span>
-                            </td>
-                            <td>{{ session.model_type }}</td>
-                            <td>
-                                {% if session.status == 'completed' %}
-                                    <span class="badge bg-success">Completed</span>
-                                {% elif session.status == 'running' %}
-                                    <span class="badge bg-warning">
-                                        <span class="spinner-border spinner-border-sm"></span> Running
-                                    </span>
-                                {% elif session.status == 'failed' %}
-                                    <span class="badge bg-danger" title="{{ session.error_message }}">Failed</span>
-                                {% else %}
-                                    <span class="badge bg-secondary">{{ session.status }}</span>
-                                {% endif %}
-                            </td>
-                            <td>
-                                {% if session.end_time and session.start_time %}
-                                    {{ ((session.end_time - session.start_time).total_seconds() / 60)|round(1) }} min
-                                {% elif session.status == 'running' %}
-                                    <span class="spinner-border spinner-border-sm"></span>
-                                {% else %}
-                                    -
-                                {% endif %}
-                            </td>
-                            <td>
-                                {% if session.metrics %}
-                                    <button class="btn btn-sm btn-info" onclick='showMetrics({{ session.metrics|tojson }})'>
-                                        <i class="fas fa-chart-bar"></i> View
-                                    </button>
-                                {% elif session.error_message %}
-                                    <span class="text-danger small" title="{{ session.error_message }}">
-                                        <i class="fas fa-exclamation-triangle"></i> Error
-                                    </span>
-                                {% else %}
-                                    -
-                                {% endif %}
-                            </td>
-                        </tr>
-                        {% else %}
-                        <tr>
-                            <td colspan="6" class="text-center text-muted">No training sessions yet</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+    <!-- Training Monitor + Model Status -->
+    <div class="col-lg-7">
+        <div class="cf-card animate-in" style="margin-bottom:16px;">
+            <div class="cf-card-header">
+                <h3><i class="fas fa-chart-line" style="margin-right:8px; color:var(--info);"></i> Training Monitor</h3>
             </div>
+            <div class="cf-card-body">
+                <div id="training-monitor">
+                    <div style="display:flex;align-items:center;gap:10px;padding:16px;background:var(--info-light);border-radius:var(--radius-sm);color:#0C4A6E;">
+                        <i class="fas fa-info-circle"></i>
+                        <span style="font-size:13px;">No active training session. Configure and start training from the left panel.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-card animate-in">
+            <div class="cf-card-header">
+                <h3><i class="fas fa-check-circle" style="margin-right:8px; color:var(--success);"></i> Model Status</h3>
+            </div>
+            <div class="cf-card-body">
+                <div id="model-status-content">
+                    <div class="empty-state" style="padding:24px;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading model status...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Training History -->
+<div class="cf-card animate-in">
+    <div class="cf-card-header">
+        <h3><i class="fas fa-history" style="margin-right:8px; color:var(--text-muted);"></i> Training History</h3>
+    </div>
+    <div class="cf-card-body" style="padding:0;">
+        <div style="overflow-x:auto;">
+            <table class="cf-table">
+                <thead>
+                    <tr>
+                        <th>Start Time</th>
+                        <th>Coins</th>
+                        <th>Model</th>
+                        <th>Status</th>
+                        <th>Duration</th>
+                        <th>Metrics</th>
+                    </tr>
+                </thead>
+                <tbody id="training-history">
+                    {% for session in sessions %}
+                    <tr>
+                        <td>{{ session.start_time.strftime('%Y-%m-%d %H:%M') }}</td>
+                        <td><span class="cf-badge accent">{{ session.coin_symbol }}</span></td>
+                        <td style="text-transform:capitalize;">{{ session.model_type }}</td>
+                        <td>
+                            {% if session.status == 'completed' %}
+                                <span class="cf-badge success"><i class="fas fa-check" style="font-size:10px;"></i> Completed</span>
+                            {% elif session.status == 'running' %}
+                                <span class="cf-badge warning">
+                                    <span class="status-dot loading" style="margin-right:2px;"></span> Running
+                                </span>
+                            {% elif session.status == 'failed' %}
+                                <span class="cf-badge danger" title="{{ session.error_message }}">
+                                    <i class="fas fa-times" style="font-size:10px;"></i> Failed
+                                </span>
+                            {% else %}
+                                <span class="cf-badge neutral">{{ session.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if session.end_time and session.start_time %}
+                                <span style="font-weight:600;">{{ ((session.end_time - session.start_time).total_seconds() / 60)|round(1) }} min</span>
+                            {% elif session.status == 'running' %}
+                                <span class="status-dot loading"></span>
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if session.metrics %}
+                                <button class="cf-btn primary sm" onclick='showMetrics({{ session.metrics|tojson }})'>
+                                    <i class="fas fa-chart-bar"></i> View
+                                </button>
+                            {% elif session.error_message %}
+                                <span style="color:var(--danger);font-size:12px;" title="{{ session.error_message }}">
+                                    <i class="fas fa-exclamation-triangle"></i> Error
+                                </span>
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="6">
+                            <div class="empty-state">
+                                <i class="fas fa-brain"></i>
+                                <p>No training sessions yet.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -169,12 +191,12 @@
 <!-- Metrics Modal -->
 <div class="modal fade" id="metricsModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Training Metrics</h5>
+        <div class="modal-content" style="border:1px solid var(--border);border-radius:var(--radius);">
+            <div class="modal-header" style="border-bottom:1px solid var(--border-light);padding:20px 24px;">
+                <h5 class="modal-title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Training Metrics</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body" id="metrics-content"></div>
+            <div class="modal-body" id="metrics-content" style="padding:24px;"></div>
         </div>
     </div>
 </div>
